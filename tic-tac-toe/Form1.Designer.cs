@@ -43,7 +43,7 @@ namespace tic_tac_toe
             // btnTopLeft
             // 
             this.btnTopLeft.AccessibleName = "";
-            this.btnTopLeft.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTopLeft.Font = new System.Drawing.Font("Segoe UI Emoji", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTopLeft.Location = new System.Drawing.Point(12, 12);
             this.btnTopLeft.Name = "btnTopLeft";
             this.btnTopLeft.Size = new System.Drawing.Size(158, 136);
@@ -53,14 +53,17 @@ namespace tic_tac_toe
             // 
             // btnMidLeft
             // 
+            this.btnMidLeft.Font = new System.Drawing.Font("Segoe UI Emoji", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMidLeft.Location = new System.Drawing.Point(12, 154);
             this.btnMidLeft.Name = "btnMidLeft";
             this.btnMidLeft.Size = new System.Drawing.Size(158, 136);
             this.btnMidLeft.TabIndex = 1;
             this.btnMidLeft.UseVisualStyleBackColor = true;
+            this.btnMidLeft.Click += new System.EventHandler(this.btnMidLeft_Click);
             // 
             // btnBotLeft
             // 
+            this.btnBotLeft.Font = new System.Drawing.Font("Segoe UI Emoji", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBotLeft.Location = new System.Drawing.Point(12, 296);
             this.btnBotLeft.Name = "btnBotLeft";
             this.btnBotLeft.Size = new System.Drawing.Size(158, 136);
@@ -70,14 +73,17 @@ namespace tic_tac_toe
             // 
             // btnTopMid
             // 
+            this.btnTopMid.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTopMid.Location = new System.Drawing.Point(176, 12);
             this.btnTopMid.Name = "btnTopMid";
             this.btnTopMid.Size = new System.Drawing.Size(158, 136);
             this.btnTopMid.TabIndex = 3;
             this.btnTopMid.UseVisualStyleBackColor = true;
+            this.btnTopMid.Click += new System.EventHandler(this.btnTopMid_Click);
             // 
             // btnMidMid
             // 
+            this.btnMidMid.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMidMid.Location = new System.Drawing.Point(176, 154);
             this.btnMidMid.Name = "btnMidMid";
             this.btnMidMid.Size = new System.Drawing.Size(158, 136);
@@ -86,6 +92,7 @@ namespace tic_tac_toe
             // 
             // btnBotMid
             // 
+            this.btnBotMid.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBotMid.Location = new System.Drawing.Point(176, 296);
             this.btnBotMid.Name = "btnBotMid";
             this.btnBotMid.Size = new System.Drawing.Size(158, 136);
@@ -94,6 +101,7 @@ namespace tic_tac_toe
             // 
             // btnTopRight
             // 
+            this.btnTopRight.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTopRight.Location = new System.Drawing.Point(340, 12);
             this.btnTopRight.Name = "btnTopRight";
             this.btnTopRight.Size = new System.Drawing.Size(158, 136);
@@ -102,6 +110,7 @@ namespace tic_tac_toe
             // 
             // btnMidRight
             // 
+            this.btnMidRight.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMidRight.Location = new System.Drawing.Point(340, 154);
             this.btnMidRight.Name = "btnMidRight";
             this.btnMidRight.Size = new System.Drawing.Size(158, 136);
@@ -110,6 +119,7 @@ namespace tic_tac_toe
             // 
             // btnBotRight
             // 
+            this.btnBotRight.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBotRight.Location = new System.Drawing.Point(340, 296);
             this.btnBotRight.Name = "btnBotRight";
             this.btnBotRight.Size = new System.Drawing.Size(158, 136);
