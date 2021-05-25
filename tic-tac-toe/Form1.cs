@@ -48,7 +48,7 @@ namespace tic_tac_toe
                         btnMidRight.Text = "X";
                         break;
                     case 9:
-                        btnTopRight.Text = "X";
+                        btnBotRight.Text = "X";
                         break;
                 }
                 turn = 1;
