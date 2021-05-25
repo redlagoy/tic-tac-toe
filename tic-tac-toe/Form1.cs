@@ -32,6 +32,24 @@ namespace tic_tac_toe
                     case 3:
                         btnBotLeft.Text = "X";
                         break;
+                    case 4:
+                        btnTopMid.Text = "X";
+                        break;
+                    case 5:
+                        btnMidMid.Text = "X";
+                        break;
+                    case 6:
+                        btnBotMid.Text = "X";
+                        break;
+                    case 7:
+                        btnTopRight.Text = "X";
+                        break;
+                    case 8:
+                        btnMidRight.Text = "X";
+                        break;
+                    case 9:
+                        btnTopRight.Text = "X";
+                        break;
                 }
                 turn = 1;
             }
@@ -48,6 +66,24 @@ namespace tic_tac_toe
                     case 3:
                         btnBotLeft.Text = "O";
                         break;
+                    case 4:
+                        btnTopMid.Text = "O";
+                        break;
+                    case 5:
+                        btnMidMid.Text = "O";
+                        break;
+                    case 6:
+                        btnBotMid.Text = "O";
+                        break;
+                    case 7:
+                        btnTopRight.Text = "O";
+                        break;
+                    case 8:
+                        btnMidRight.Text = "O";
+                        break;
+                    case 9:
+                        btnBotRight.Text = "O";
+                        break;
                 }
                 turn = 0;
             }
@@ -58,8 +94,6 @@ namespace tic_tac_toe
             playerTurn = turnPlay(playerTurn, 1);
         }
 
-
-
         private void button3_Click(object sender, EventArgs e)
         {
             playerTurn = turnPlay(playerTurn, 3);
@@ -67,12 +101,37 @@ namespace tic_tac_toe
 
         private void btnTopMid_Click(object sender, EventArgs e)
         {
-
+            playerTurn = turnPlay(playerTurn, 4);
         }
 
         private void btnMidLeft_Click(object sender, EventArgs e)
         {
             playerTurn = turnPlay(playerTurn, 2);
+        }
+
+        private void btnMidMid_Click(object sender, EventArgs e)
+        {
+            playerTurn = turnPlay(playerTurn, 5);
+        }
+
+        private void btnBotMid_Click(object sender, EventArgs e)
+        {
+            playerTurn = turnPlay(playerTurn, 6);
+        }
+
+        private void btnTopRight_Click(object sender, EventArgs e)
+        {
+            playerTurn = turnPlay(playerTurn, 7);
+        }
+
+        private void btnMidRight_Click(object sender, EventArgs e)
+        {
+            playerTurn = turnPlay(playerTurn, 8);
+        }
+
+        private void btnBotRight_Click(object sender, EventArgs e)
+        {
+            playerTurn = turnPlay(playerTurn, 9);
         }
     }
 }
