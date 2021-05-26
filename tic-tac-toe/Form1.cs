@@ -76,7 +76,15 @@ namespace tic_tac_toe
 
             if (playerWin)
             {
-                MessageBox.Show(ekso + " wins the game");
+                DialogResult dialogResult = MessageBox.Show(ekso + " wins the game. Do you want to play again?", "Tic-Tac-Toe", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    Application.Exit();
+                }
             }
            
         }
