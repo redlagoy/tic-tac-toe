@@ -89,49 +89,63 @@ namespace tic_tac_toe
             }
             return turn;
         }
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void btnTopLeft_Click(object sender, EventArgs e)
         {
+            btnTopLeft.Enabled = false;
             playerTurn = turnPlay(playerTurn, 1);
+
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnMidLeft_Click(object sender, EventArgs e)
         {
+            btnMidLeft.Enabled = false;
+            playerTurn = turnPlay(playerTurn, 2);
+        }
+
+        private void btnBotLeft_Click(object sender, EventArgs e)
+        {
+            btnBotLeft.Enabled = false;
             playerTurn = turnPlay(playerTurn, 3);
         }
 
         private void btnTopMid_Click(object sender, EventArgs e)
         {
+            btnTopMid.Enabled = false;
             playerTurn = turnPlay(playerTurn, 4);
-        }
-
-        private void btnMidLeft_Click(object sender, EventArgs e)
-        {
-            playerTurn = turnPlay(playerTurn, 2);
         }
 
         private void btnMidMid_Click(object sender, EventArgs e)
         {
+            btnMidMid.Enabled = false;
             playerTurn = turnPlay(playerTurn, 5);
         }
 
         private void btnBotMid_Click(object sender, EventArgs e)
         {
+            btnBotMid.Enabled = false;
             playerTurn = turnPlay(playerTurn, 6);
         }
 
         private void btnTopRight_Click(object sender, EventArgs e)
         {
+            btnTopRight.Enabled = false;
             playerTurn = turnPlay(playerTurn, 7);
         }
 
         private void btnMidRight_Click(object sender, EventArgs e)
         {
+            btnMidRight.Enabled = false;
             playerTurn = turnPlay(playerTurn, 8);
         }
 
         private void btnBotRight_Click(object sender, EventArgs e)
         {
+            btnBotRight.Enabled = false;
             playerTurn = turnPlay(playerTurn, 9);
         }
+
+               
     }
 }

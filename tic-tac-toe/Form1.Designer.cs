@@ -49,7 +49,7 @@ namespace tic_tac_toe
             this.btnTopLeft.Size = new System.Drawing.Size(158, 136);
             this.btnTopLeft.TabIndex = 0;
             this.btnTopLeft.UseVisualStyleBackColor = true;
-            this.btnTopLeft.Click += new System.EventHandler(this.button1_Click);
+            this.btnTopLeft.Click += new System.EventHandler(this.btnTopLeft_Click);
             // 
             // btnMidLeft
             // 
@@ -69,7 +69,7 @@ namespace tic_tac_toe
             this.btnBotLeft.Size = new System.Drawing.Size(158, 136);
             this.btnBotLeft.TabIndex = 2;
             this.btnBotLeft.UseVisualStyleBackColor = true;
-            this.btnBotLeft.Click += new System.EventHandler(this.button3_Click);
+            this.btnBotLeft.Click += new System.EventHandler(this.btnBotLeft_Click);
             // 
             // btnTopMid
             // 
