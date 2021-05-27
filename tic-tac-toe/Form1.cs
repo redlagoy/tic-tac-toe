@@ -17,9 +17,10 @@ namespace tic_tac_toe
             InitializeComponent();
         }
 
-        public int playerTurn = 0;
+        public static int playerTurn = 0;
+        public static int numOfTurns = 0;
 
-        public void checkWin(int playerTurn)
+        public void checkWin()
         {
             bool playerWin = false;
             string ekso = "";
@@ -32,6 +33,8 @@ namespace tic_tac_toe
                     ekso = "X";
                     break;
             }
+
+            numOfTurns = numOfTurns + 1; 
 
             if(btnTopLeft.Text == ekso && btnTopMid.Text == ekso && btnTopRight.Text == ekso)
             {
@@ -74,12 +77,45 @@ namespace tic_tac_toe
                 playerWin = false;
             }
 
-            if (playerWin)
+            if (playerWin || numOfTurns == 9)
             {
-                DialogResult dialogResult = MessageBox.Show(ekso + " wins the game. Do you want to play again?", "Tic-Tac-Toe", MessageBoxButtons.YesNo);
+                DialogResult dialogResult;
+                if (playerWin)
+                {
+                    dialogResult = MessageBox.Show(ekso + " wins the game. Do you want to play again?", "Tic-Tac-Toe", MessageBoxButtons.YesNo);
+                }
+                else
+                {
+                    dialogResult = MessageBox.Show("It's a tie. Do you want to play again?", "Tic-Tac-Toe", MessageBoxButtons.YesNo);
+                }
+                
+
                 if (dialogResult == DialogResult.Yes)
                 {
-                    Application.Restart();
+                    btnTopLeft.Enabled = true;
+                    btnMidLeft.Enabled = true;
+                    btnBotLeft.Enabled = true;
+                    btnTopMid.Enabled = true;
+                    btnMidMid.Enabled = true;
+                    btnBotMid.Enabled = true;
+                    btnTopRight.Enabled = true;
+                    btnMidRight.Enabled = true;
+                    btnBotRight.Enabled = true;
+
+                    btnTopLeft.Text = "";
+                    btnMidLeft.Text = "";
+                    btnBotLeft.Text = "";
+                    btnTopMid.Text = "";
+                    btnMidMid.Text = "";
+                    btnBotMid.Text = "";
+                    btnTopRight.Text = "";
+                    btnMidRight.Text = "";
+                    btnBotRight.Text = "";
+
+                    playerTurn = 0;
+                    playerWin = false;
+                    numOfTurns = 0;
+
                 }
                 else if (dialogResult == DialogResult.No)
                 {
@@ -168,63 +204,63 @@ namespace tic_tac_toe
         {
             btnTopLeft.Enabled = false;
             playerTurn = turnPlay(playerTurn, 1);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnMidLeft_Click(object sender, EventArgs e)
         {
             btnMidLeft.Enabled = false;
             playerTurn = turnPlay(playerTurn, 2);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnBotLeft_Click(object sender, EventArgs e)
         {
             btnBotLeft.Enabled = false;
             playerTurn = turnPlay(playerTurn, 3);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnTopMid_Click(object sender, EventArgs e)
         {
             btnTopMid.Enabled = false;
             playerTurn = turnPlay(playerTurn, 4);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnMidMid_Click(object sender, EventArgs e)
         {
             btnMidMid.Enabled = false;
             playerTurn = turnPlay(playerTurn, 5);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnBotMid_Click(object sender, EventArgs e)
         {
             btnBotMid.Enabled = false;
             playerTurn = turnPlay(playerTurn, 6);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnTopRight_Click(object sender, EventArgs e)
         {
             btnTopRight.Enabled = false;
             playerTurn = turnPlay(playerTurn, 7);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnMidRight_Click(object sender, EventArgs e)
         {
             btnMidRight.Enabled = false;
             playerTurn = turnPlay(playerTurn, 8);
-            checkWin(playerTurn);
+            checkWin();
         }
 
         private void btnBotRight_Click(object sender, EventArgs e)
         {
             btnBotRight.Enabled = false;
             playerTurn = turnPlay(playerTurn, 9);
-            checkWin(playerTurn);
+            checkWin();
         }
 
               
