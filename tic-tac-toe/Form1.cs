@@ -48,10 +48,6 @@ namespace tic_tac_toe
             {
                 playerWin = true;
             }
-            else if (btnMidLeft.Text == ekso && btnMidMid.Text == ekso && btnBotMid.Text == ekso)
-            {
-                playerWin = true;
-            }
             else if (btnTopLeft.Text == ekso && btnMidLeft.Text == ekso && btnBotLeft.Text == ekso)
             {
                 playerWin = true;
