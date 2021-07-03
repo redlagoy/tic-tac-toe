@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tic_tac_toe
 {
-    public partial class Form1 : Form
+    public partial class TicTacToe : Form
     {
-        public Form1()
+        public TicTacToe()
         {
             InitializeComponent();
         }
